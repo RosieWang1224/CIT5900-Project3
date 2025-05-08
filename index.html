@@ -47,14 +47,26 @@
 </head>
 <body>
 
-    <h1>CIT5900 – Research Output Dashboard</h1>
-    <p><strong>Introduction:</strong> (To be filled in later) – Summarize the purpose of the dashboard, what the dataset contains, and the key questions explored through visualization.</p>
+    <h1>CIT5900 – Project 3 Research Output Dashboard</h1>
+    <p><strong>Project Overview:</strong> This project, conducted by Group 4 (Victoria Hannett, Ruoxi Wang, Swas Tripathi, and Alan Gu), consolidates the results of all group searches to create a comprehensive inventory of research outputs related to the Federal Statistical Research Data Centers (FSRDCs). The primary goal is to generate a streamlined dataset of these outputs and explore patterns or relationships within the data, such as publication trends, institutional contributions, and thematic focuses. This landing page serves as a public-facing, open-source visualization dashboard, hosted via GitHub Pages, to present key findings through a series of graphs and brief analytical discussions.</p>
 
     <hr>
 
-    <h2>1. 📈 Publications Per Year</h2>
-    <img src="Graphs/PublicationsPerYear.png" alt="Publications per year">
-    <p>(Discussion to be filled in later)</p>
+    <h2 id="chart1">📈 Publications Per Year</h2>
+    <img src="Graphs/PublicationsPerYear.png" alt="Publications per year line chart" class="graph">
+    
+    <div class="description-block">
+      <p><strong>Description:</strong> This <em>line chart with markers</em> illustrates annual publication counts associated with FSRDC research outputs. A <span style="color:green; font-weight:bold;">distinct green line</span> sets it apart visually, and the rotated x-axis labels ensure legibility across years.</p>
+    
+      <div style="background-color:#f5f5f5; padding: 15px 20px; border-left: 4px solid #011F5B; margin-top: 20px;">
+        <strong>📌 Key Insight:</strong>
+        <p style="margin: 10px 0 0;">
+          A two-phase trajectory is evident: publication volume held steady (≤ 5/year) through 2009, but skyrocketed post-2015 — surpassing 120 by 2023. This inflection point mirrors the momentum of open-data policies in federal research, marking 2015–2023 as the most analytically rich window for collaboration network modeling.
+        </p>
+      </div>
+    </div>
+    <hr>
+    
 
     <h2>2. 📚 Distribution of Output Types</h2>
     <img src="Graphs/Distribution_of_Output_Types.png" alt="Output type distribution">
