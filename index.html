@@ -43,6 +43,50 @@
             font-size: 0.9em;
             color: #777;
         }
+        .resource-section {
+            margin-top: 40px;
+            margin-bottom: 60px;
+            }
+            .resource-section h3 {
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            color: #990000;
+            }
+
+            .resource-card {
+            background-color: #f9f9f9;
+            border-left: 4px solid #011F5B;
+            margin-bottom: 20px;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+            transition: background-color 0.3s;
+            }
+            .resource-card:hover {
+            background-color: #f1f1f1;
+            }
+            .resource-card a {
+            display: flex;
+            text-decoration: none;
+            color: inherit;
+            width: 100%;
+            }
+            .resource-icon {
+            font-size: 2em;
+            margin-right: 15px;
+            }
+            .resource-content h4 {
+            margin: 0;
+            font-size: 1.1em;
+            color: #011F5B;
+            }
+            .resource-content p {
+            margin: 4px 0 0;
+            font-size: 0.95em;
+            color: #555;
+            }
+
     </style>
 </head>
 <body>
@@ -52,13 +96,29 @@
 
     <hr>
 
-    <div class="resource-links">
-        <p><strong>Want to explore further?</strong> You can view the full codebase and technical report here:</p>
-        <ul>
-          <li>📁 <a href="https://github.com/RosieWang1224/CIT5900-Project3" target="_blank"><strong>GitHub Repository</strong></a> – Contains all data processing and visualization code.</li>
-          <li>📄 <a href="INSERT_REPORT_LINK_HERE" target="_blank"><strong>Final Report (PDF)</strong></a> – Full analysis, methodology, and data interpretation.</li>
-        </ul>
+    <div class="resource-section">
+        <h3>🔎 Dive Deeper</h3>
+        <div class="resource-card">
+          <a href="https://github.com/RosieWang1224/CIT5900-Project3" target="_blank">
+            <div class="resource-icon">📁</div>
+            <div class="resource-content">
+              <h4>GitHub Repository</h4>
+              <p>All project code for data processing, analysis, and dashboard generation.</p>
+            </div>
+          </a>
+        </div>
+      
+        <div class="resource-card">
+          <a href="INSERT_REPORT_LINK_HERE" target="_blank">
+            <div class="resource-icon">📄</div>
+            <div class="resource-content">
+              <h4>Final Report (PDF)</h4>
+              <p>Full documentation of methodology, insights, and data interpretation.</p>
+            </div>
+          </a>
+        </div>
       </div>
+      
       
 
     <h2 id="chart1">📈 Publications Per Year</h2>
