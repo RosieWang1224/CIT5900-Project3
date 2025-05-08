@@ -47,10 +47,19 @@
 </head>
 <body>
 
-    <h1>CIT5900 – Project 3 Research Output Dashboard</h1>
+    <h1>CIT5900 – Project 3 Research Output </h1>
     <p><strong>Project Overview:</strong> This project, conducted by Group 4 (Victoria Hannett, Ruoxi Wang, Swas Tripathi, and Alan Gu), consolidates the results of all group searches to create a comprehensive inventory of research outputs related to the Federal Statistical Research Data Centers (FSRDCs). The primary goal is to generate a streamlined dataset of these outputs and explore patterns or relationships within the data, such as publication trends, institutional contributions, and thematic focuses. This landing page serves as a public-facing, open-source visualization dashboard, hosted via GitHub Pages, to present key findings through a series of graphs and brief analytical discussions.</p>
 
     <hr>
+
+    <div class="resource-links">
+        <p><strong>Want to explore further?</strong> You can view the full codebase and technical report here:</p>
+        <ul>
+          <li>📁 <a href="https://github.com/RosieWang1224/CIT5900-Project3" target="_blank"><strong>GitHub Repository</strong></a> – Contains all data processing and visualization code.</li>
+          <li>📄 <a href="INSERT_REPORT_LINK_HERE" target="_blank"><strong>Final Report (PDF)</strong></a> – Full analysis, methodology, and data interpretation.</li>
+        </ul>
+      </div>
+      
 
     <h2 id="chart1">📈 Publications Per Year</h2>
     <img src="Graphs/PublicationsPerYear.png" alt="Publications per year line chart" class="graph">
@@ -68,25 +77,81 @@
     <hr>
     
 
-    <h2>2. 📚 Distribution of Output Types</h2>
-    <img src="Graphs/Distribution_of_Output_Types.png" alt="Output type distribution">
-    <p>(Discussion to be filled in later)</p>
-
-    <h2>3. 🧪 Top 10 Projects by Publications</h2>
-    <img src="Graphs/Top10_Projects_by_Publications.png" alt="Top projects by publication count">
-    <p>(Discussion to be filled in later)</p>
-
-    <h2>4. 🧠 Top 10 Prolific Authors</h2>
-    <img src="Graphs/Top10_Prolific_Authors.png" alt="Top prolific authors">
-    <p>(Discussion to be filled in later)</p>
-
-    <h2>5. 🧬 Top 10 RDCS (Research Domain Categories)</h2>
-    <img src="Graphs/Top10_RDCS.png" alt="Top research domains">
-    <p>(Discussion to be filled in later)</p>
-
-    <h2>6. 🔍 Top 10 Words in Output Titles</h2>
-    <img src="Graphs/Top10_Words_in_Output_Titles.png" alt="Common title words">
-    <p>(Discussion to be filled in later)</p>
+    <h2 id="chart2">📈 Publications Per Year</h2>
+    <img src="Graphs/PublicationsPerYear.png" alt="Publications per year line chart" class="graph">
+    
+    <div class="description-block">
+      <p><strong>Description:</strong> This <em>line chart with markers</em> illustrates annual publication counts associated with FSRDC research outputs. A <span style="color:green; font-weight:bold;">distinct green line</span> sets it apart visually, and the rotated x-axis labels ensure legibility across years.</p>
+    
+      <div style="background-color:#f5f5f5; padding: 15px 20px; border-left: 4px solid #011F5B; margin-top: 20px;">
+        <strong>📌 Key Insight:</strong>
+        <p style="margin: 10px 0 0;">
+          A two-phase trajectory is evident: publication volume held steady (≤ 5/year) through 2009, but skyrocketed post-2015 — surpassing 120 by 2023. This inflection point mirrors the momentum of open-data policies in federal research, marking 2015–2023 as the most analytically rich window for collaboration network modeling.
+        </p>
+      </div>
+    </div>
+    <hr>
+    
+    <h2 id="chart3">📘 Distribution of Output Types</h2>
+    <img src="Graphs/Distribution_of_Output_Types.png" alt="Bar chart of output types" class="graph">
+    
+    <div class="description-block">
+      <p><strong>Description:</strong> A <em>bar chart with pastel palette</em> shows the distribution of output types. Each bar uses a distinct color to clarify counts without suggesting a hierarchical order.</p>
+    
+      <div style="background-color:#f5f5f5; padding: 15px 20px; border-left: 4px solid #011F5B; margin-top: 20px;">
+        <strong>📌 Key Insight:</strong>
+        <p style="margin: 10px 0 0;">
+          Working papers (WP), journal articles (JA), and book chapters (BC) together make up over 90% of all outputs. Less common formats like conference proceedings and technical reports appear infrequently. This highlights the WP/JA/BC trio as the backbone of citable content — essential for any citation or impact-focused analysis.
+        </p>
+      </div>
+    </div>
+    <hr>
+    
+    <h2 id="chart4">🏛️ Top 10 RDCs (Research Domain Categories)</h2>
+    <img src="Graphs/Top10_RDCS.png" alt="Top 10 RDCs bar chart" class="graph">
+    
+    <div class="description-block">
+      <p><strong>Description:</strong> A <em>horizontal bar chart</em> sorted in ascending order. This layout emphasizes length of RDC names and draws the eye upward to the most prolific centers using a consistent “Blues_d” palette.</p>
+    
+      <div style="background-color:#f5f5f5; padding: 15px 20px; border-left: 4px solid #011F5B; margin-top: 20px;">
+        <strong>📌 Key Insight:</strong>
+        <p style="margin: 10px 0 0;">
+          The top three RDCs account for roughly 40% of all research outputs, while the bottom half of this top-10 list barely surpasses single digits. This suggests a highly centralized research ecosystem where a few hubs dominate FSRDC activity — crucial for prioritizing targets in impact or network analysis.
+        </p>
+      </div>
+    </div>
+    <hr>
+    
+    <h2 id="chart5">👩‍🔬 Top 10 Prolific Authors</h2>
+    <img src="Graphs/Top10_Prolific_Authors.png" alt="Prolific authors bar chart" class="graph">
+    
+    <div class="description-block">
+      <p><strong>Description:</strong> A <em>horizontal bar chart</em> uses the “Magma” gradient to emphasize rank. Author names are flipped from “Last, F.” to “F. Last” for natural reading.</p>
+    
+      <div style="background-color:#f5f5f5; padding: 15px 20px; border-left: 4px solid #011F5B; margin-top: 20px;">
+        <strong>📌 Key Insight:</strong>
+        <p style="margin: 10px 0 0;">
+          A few “power users” dominate the author landscape — the top author contributes 18 papers. This steep drop-off underscores the importance of setting an author threshold (e.g., ≥ 3 papers) when analyzing co-authorship networks, to focus on consistent contributors over incidental ones.
+        </p>
+      </div>
+    </div>
+    <hr>
+    
+    <h2 id="chart6">🔠 Top 10 Words in Output Titles</h2>
+    <img src="Graphs/Top10_Words_in_Output_Titles.png" alt="Top 10 title words" class="graph">
+    
+    <div class="description-block">
+      <p><strong>Description:</strong> A <em>standard vertical bar chart</em> showing the most frequent words found in output titles. X-axis labels are tilted for clarity, with bars sorted by frequency in descending order.</p>
+    
+      <div style="background-color:#f5f5f5; padding: 15px 20px; border-left: 4px solid #011F5B; margin-top: 20px;">
+        <strong>📌 Key Insight:</strong>
+        <p style="margin: 10px 0 0;">
+          The dominance of words like <em>“evidence,” “study,”</em> and <em>“analysis”</em> reveals a strong methodological focus in FSRDC research. The inclusion of terms such as <em>“health,” “data,”</em> and <em>“cancer”</em> highlights public health and epidemiology as core domains. Meanwhile, the presence of <em>“review”</em> suggests a substantial portion of outputs synthesize existing knowledge rather than solely present new findings.
+        </p>
+      </div>
+    </div>
+    <hr>
+    
 
     <footer>
         © 2025 Rosie Wang | <a href="https://github.com/RosieWang1224/CIT5900-Project3" target="_blank">View project on GitHub</a>
