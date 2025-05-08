@@ -21,7 +21,8 @@ Victoria Hannett, Ruoxi Wang, Swas Tripathi, Alan Gu
 ## 🔗 Resources
 - 🌐 [**GitHub Pages Dashboard**](https://rosiewang1224.github.io/CIT5900-Project3/)
 - 📁 [**Full Code Repository**](https://github.com/RosieWang1224/CIT5900-Project3)
-- 📄 [**Project Report**](file:///Users/ruoxiwang/Downloads/Report_Group4.pdf)
+- 📄 [**Project Report**](<a href="Report_Group4.pdf" target="_blank">
+)
 
 ---
 
